@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
+            <div class="panel panel-primary">
                 <div class="panel-heading">Login</div>
                 <div class="panel-body">
                     {!! Form::open(['url'=>'login', 'class'=>'form-horizontal']) !!}
@@ -37,8 +37,9 @@
 
                     <div class="form-group">
                         <div class="col-md-6 col-md-offset-4">
-                            <button type="submit" class="btn btn-primary">
-                                <i class="fa fa-btn fa-sign-in"></i> Login
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                <i class="fa fa-btn fa-sign-in"></i> <center><span class="glyphicon glyphicon-log-in
+"></span> Login
                             </button>
 
                             <a class="btn btn-link" href="{{ url('/password/reset') }}">Lupa Password</a>
@@ -52,3 +53,5 @@
     </div>
 </div>
 @endsection
+<!--  <button type="button" class="btn btn-primary btn-lg btn-block"><center><span class="glyphicon glyphicon-log-in
+"></span> Login</center></button> -->
