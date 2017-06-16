@@ -12,10 +12,6 @@
 
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/app.css">
-    <link rel="stylesheet" href="/css/app.css">
     <link rel="stylesheet" href="/css/jquery.dataTables.css">
     <link rel="stylesheet" href="/css/dataTables.bootstrap.css">
 
@@ -54,6 +50,7 @@
                         @endif
                         @role('admin')
                             <li><a href="{{ route('authors.index') }}">Penulis</a></li>
+                            <li><a href="{{ route('books.index') }}">Buku</a></li>
                         @endrole
                     </ul>
 
@@ -94,8 +91,8 @@
 
     <!-- Scripts -->
     <script src="/js/app.js"></script>
-    <script src="/js/jquery-3.1.0.min.js"></script>
-    <script src="/js/bootstrap.js."></script>
+    <!-- <script src="{{ asset('/js/jquery-3.1.0.min.js') }}"></script> -->
+    <!-- <script src="{{ asset('/js/bootstrap.js') }}"></script> -->
     <script src="/js/jquery.dataTables.min.js"></script>
     <script src="/js/dataTables.bootstrap.min.js"></script>
     @yield('scripts')
